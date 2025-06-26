@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizadero</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="resources/css/default.css">
+    <link rel="stylesheet" href="resources/css/index.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="header-logo">
+                <img src="resources/images/organizadero-logo.svg" alt="Organizadero">
+            </div>
+
+            <ul>
+                <a href="" class="d-button selected">Bancada</a>
+                <a href="" class="d-button">Opções</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="fs-19 fw-med wd-100 ta-center">Bancada de Luan</h1>
+
+        <div class="slots">
+
+            <div class="slot">
+                <h2>T1</h2>
+                <h3>FRESA D18</h3>
+
+                <div>
+                    <span>Altura máquina</span>
+                    <h4>379.18</h4>
+                </div>
+            </div>
+
+            <div class="slot empty" onclick="editModal(true)">
+                <h5>Vazio</h5>
+                <h6>Clique para adicionar</h6>
+            </div>
+
+            <div class="slot">
+                <h2>T1</h2>
+                <h3>FRESA D18</h3>
+
+                <div>
+                    <span>Altura máquina</span>
+                    <h4>379.18</h4>
+                </div>
+            </div>
+
+            <div class="slot">
+                <h2>T1</h2>
+                <h3>FRESA D18</h3>
+
+                <div>
+                    <span>Altura máquina</span>
+                    <h4>379.18</h4>
+                </div>
+            </div>
+            
+            <!-- -->
+
+            <div class="slot empty" onclick="editModal(true)">
+                <h5>Vazio</h5>
+                <h6>Clique para adicionar</h6>
+            </div>
+
+            <div class="slot empty" onclick="editModal(true)">
+                <h5>Vazio</h5>
+                <h6>Clique para adicionar</h6>
+            </div>
+
+            <div class="slot empty" onclick="editModal(true)">
+                <h5>Vazio</h5>
+                <h6>Clique para adicionar</h6>
+            </div>
+
+            <div class="slot empty" onclick="editModal(true)">
+                <h5>Vazio</h5>
+                <h6>Clique para adicionar</h6>
+            </div>
+
+            <!-- -->
+
+        </div>
+
+        
+    </main>
+    
+
+    <div class="black-back" onclick="editModal(false)"></div>
+
+    <div class="edit-modal">
+        <div>
+            <h2><i class="fa-solid fa-a"></i>Nome da Ferramenta</h2>
+            <input type="text" value="FRESA D18">
+        </div>
+
+        <div>
+            <h2><i class="fa-solid fa-list-ol"></i>Número da Ferramenta</h2>
+            <input type="text" value="1">
+        </div>
+
+        <div>
+            <h2><i class="fa-solid fa-up-down"></i>Altura máquina</h2>
+            <input type="text" value="379.18">
+        </div>
+
+        <ul>
+            <button class="d-button type-2"><i class="fa-solid fa-circle-check"></i>Confirmar</button>
+            <button class="d-button type-3"><i class="fa-solid fa-broom"></i>Esvaziar</button>
+        </ul>
+
+    </div>
+
+    <script src="resources/js/main.js"></script>
+</body>
+</html>
