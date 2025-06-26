@@ -22,6 +22,7 @@
     overflow: hidden;
 
     transition: .2s;
+    -webkit-user-select: none;
 }
 
 .slots .slot h2 {
