@@ -31,11 +31,11 @@
     </header>
 
     <main>
-        <h1 class="fs-19 fw-med wd-100 ta-center">Bancada de Luan</h1>
+        <!-- <h1 class="fs-19 fw-med wd-100 ta-center">Bancada de Luan</h1> -->
 
         <div class="slots">
 
-            <div class="slot">
+            <!-- <div class="slot">
                 <h2>T1</h2>
                 <h3>FRESA D18</h3>
 
@@ -72,7 +72,7 @@
             
             <!-- -->
 
-            <div class="slot empty" onclick="editModal(true)">
+            <!-- <div class="slot empty" onclick="editModal(true)">
                 <h5>Vazio</h5>
                 <h6>Clique para adicionar</h6>
             </div>
@@ -90,7 +90,7 @@
             <div class="slot empty" onclick="editModal(true)">
                 <h5>Vazio</h5>
                 <h6>Clique para adicionar</h6>
-            </div>
+            </div> -->
 
             <!-- -->
 
@@ -105,26 +105,31 @@
     <div class="edit-modal">
         <div>
             <h2><i class="fa-solid fa-a"></i>Nome da Ferramenta</h2>
-            <input type="text" value="FRESA D18">
+            <input type="text" value="" id="tool-name-ipt">
         </div>
 
         <div>
             <h2><i class="fa-solid fa-list-ol"></i>Número da Ferramenta</h2>
-            <input type="text" value="1">
+            <input type="number" value="" id="tool-number-ipt">
         </div>
 
         <div>
             <h2><i class="fa-solid fa-up-down"></i>Altura máquina</h2>
-            <input type="text" value="379.18">
+            <input type="number" value="" id="tool-height-ipt">
         </div>
 
         <ul>
-            <button class="d-button type-2"><i class="fa-solid fa-circle-check"></i>Confirmar</button>
-            <button class="d-button type-3"><i class="fa-solid fa-broom"></i>Esvaziar</button>
+            <button class="d-button type-2" id="edit-modal-confirm-button"><i class="fa-solid fa-circle-check"></i>Confirmar</button>
+            <button class="d-button type-3" id="edit-modal-clear-button"><i class="fa-solid fa-broom"></i>Esvaziar</button>
         </ul>
 
     </div>
 
+    <div class="notification">
+        <p class="fw-med">Inserido com sucesso no "<span>banco de dados</span>"</p>
+    </div>
+
     <script src="resources/js/main.js"></script>
+    <script src="resources/js/slots.js"></script>
 </body>
 </html>

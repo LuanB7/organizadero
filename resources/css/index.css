@@ -100,7 +100,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #262626;
+    background-color: var(--c_cont_solid);
     padding: 40px 30px;
     border-radius: var(--d_border_radius);
 

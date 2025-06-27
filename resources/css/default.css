@@ -3,6 +3,7 @@
     --c_blue: #4C9AFF;
     --c_back: #1A1A1A;
     --c_cont: rgba(255, 255, 255, 0.05);
+    --c_cont_solid: #262626;
 
     --c_w_60: rgba(255, 255, 255, 0.6);
     --c_w_20: rgba(255, 255, 255, 0.2);
@@ -128,6 +129,32 @@ a.d-button {
     visibility: hidden;
     opacity: 0;
     transition: .2s;
+}
+
+.notification {
+    position: fixed;
+    left: var(--d_padding);
+    bottom: 40px;
+    background-color: var(--c_cont_solid);
+    padding: 20px;
+    z-index: 10;
+    border-radius: var(--d_border_radius);
+    transition: .3s
+}
+
+.notification p {
+    font-size: 19px;
+    color: var(--c_w_60);
+}
+
+.notification p span {
+    color: white;
+}
+
+.notification:not(.visible) {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%) scale(.9);
 }
 
 /*  */
